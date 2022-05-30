@@ -1265,17 +1265,3 @@
 # A = [1, 2, 3, 4, 5]
 # print([(lambda i=i: A[i - 1])() for i in range(len(A))])
 
-d = {}
-with open('test161.txt', 'r', encoding='utf-8') as f:
-    for line in f:
-        key = line.rstrip().split(", ")[0]
-        value = line.rstrip().split(", ")[1:]
-        value[0] = float(value[0])
-        value[1] = int(value[1])
-        d[key] = value
-print(d)
-n = input("Введите номер абонента: ")
-if n in d:
-    print(value[0]*value[1])
-else:
-    print("no number")
