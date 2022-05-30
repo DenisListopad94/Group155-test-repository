@@ -4,3 +4,4 @@ Bob 8 9 2 10
 Mary 5 4 6 9
 Rob 8 7 5 2
 Max 9 8 9 7
+Daniel 5 7 6 10
