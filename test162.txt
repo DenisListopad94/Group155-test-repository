@@ -1,0 +1,6 @@
+Nick 5 2 1 5
+Alice 5 2 9 10
+Bob 8 9 2 10
+Mary 5 4 6 9
+Rob 8 7 5 2
+Max 9 8 9 7
