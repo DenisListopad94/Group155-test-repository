@@ -1264,4 +1264,37 @@
 # # A[i - 1][j] + A[i][j - 1]
 # A = [1, 2, 3, 4, 5]
 # print([(lambda i=i: A[i - 1])() for i in range(len(A))])
+def func(*args):
+    b = ''
+    if isinstance(args[0], tuple):
+        for i in str(args[0]):
+            if i.isalpha():
+                b += i
+        print(len(b))
+    elif isinstance(args[0], list):
+        letters = ''
+        numbers = ''
+        for j in str(args[0]):
+            if j.isalpha():
+                letters += j
+            elif j.isdigit():
+                numbers += j
+        print(len(letters))
+        print(len(numbers))
+    elif type(args[0]) == int or type(args[0]) == float:
+        odd = []
+        for i in str(args[0]):
+            if int(i) % 2 != 0:
+                odd.append(i)
+        print(len(odd))
+    elif isinstance(args[0], str):
+        Letters = ''
+        for i in str(args[0]):
+            if i.isalpha():
+                Letters += i
+        print(len(Letters))
+func(('good', 'better', 1, 'best'))
+func([123, 'hfdj34sdfk4', 'klk55l43', 342])
+func(1210293843948)
+func('Have a nice day, pal!')
 
